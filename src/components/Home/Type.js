@@ -7,7 +7,6 @@ function Type() {
       options={{
         strings: [
           "Web Developer",
-          "Freelancer",
           "Laravel Developer", 
         ],
         autoStart: true,
