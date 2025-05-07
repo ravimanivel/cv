@@ -39,7 +39,7 @@ export default function Contact() {
 
         try {
             //post the data to the database    
-            const response = await fetch('http://localhost:8080/api/sendEmail/', {
+            const response = await fetch('https://cv-backend-udlu.onrender.com/api/sendEmail/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
