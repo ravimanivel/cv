@@ -38,8 +38,8 @@ export default function Contact() {
         setIsSubmitting(true);
 
         try {
-            //post the data to the database    
-            const response = await fetch('http://localhost:8080/api/sendEmail/', {
+            //post the data to the database
+            const response = await fetch('https://cv-backend-udlu.onrender.com/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -165,7 +165,7 @@ export default function Contact() {
                             <div className="flex gap-4">
                                 {[
                                     { icon: <FiLinkedin />, url: "https://www.linkedin.com/in/ravi-manivel-87887a254/", label: "LinkedIn", id: "linkedin-tooltip" },
-                                    { icon: <FiGithub />, url: "https://github.com/ravimanivel/", label: "GitHub", id: "github-tooltip" } 
+                                    { icon: <FiGithub />, url: "https://github.com/ravimanivel/", label: "GitHub", id: "github-tooltip" }
                                 ].map((social, index) => (
                                     <>
                                         <a
