@@ -69,6 +69,17 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
+
+                
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <FundProjectionScreenOutlined style={{ marginBottom: "2px" }} /> Project
+              </Nav.Link>
+            </Nav.Item>
  
             <Nav.Item>
               <Nav.Link
