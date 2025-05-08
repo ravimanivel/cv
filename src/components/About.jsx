@@ -113,9 +113,9 @@ const About = () => {
                                                 <span className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300">
                                                     2021 - 2024
                                                 </span>
-                                                <span className="px-4 py-2 bg-blue-100 dark:bg-purple-900/30 rounded-full text-sm font-medium text-blue-700 dark:text-purple-300">
+{/*                                                 <span className="px-4 py-2 bg-blue-100 dark:bg-purple-900/30 rounded-full text-sm font-medium text-blue-700 dark:text-purple-300">
                                                     CGPA: 6.62/10.00
-                                                </span>
+                                                </span> */}
                                             </div>
                                         </div>
                                     </div>
