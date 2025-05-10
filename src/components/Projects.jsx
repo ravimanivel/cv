@@ -131,7 +131,7 @@ export default function Projects() {
                     ))}
                 </div>
 
-                {/* {allProjects.length > 3 && (
+                {allProjects.length > 3 && (
                     <div className="text-center mt-12" data-aos="fade-up">
                         <button
                             onClick={toggleProjects}
@@ -140,7 +140,7 @@ export default function Projects() {
                             {visibleProjects === 3 ? 'Show More Projects' : 'Show Less'}
                         </button>
                     </div>
-                )} */}
+                )}
             </div>
         </section>
     );
