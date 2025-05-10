@@ -39,6 +39,14 @@ export default function Projects() {
             link: "https://resume-creator-ravi-ms-projects.vercel.app/",
             github: "https://github.com/ravimanivel/resume_creator",
             image: "https://plus.unsplash.com/premium_photo-1661288470388-c5006797bdff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdW1lfGVufDB8fDB8fHww"
+        },
+        {
+            title: "Ecommerce Website",
+            description: "E-commerce website for buying outfits",
+            tags: ["MongoDB", "Express.js","Angular", "Node", "Git", "Restful API"],
+            link: "https://ecommerce-site-frontend-psi.vercel.app/",
+            github: "https://github.com/ravimanivel/ecommerce-site-frontend",
+            image: "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
         }
     
     ];
