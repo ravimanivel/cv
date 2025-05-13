@@ -47,10 +47,18 @@ export default function Projects() {
             link: "https://ecommerce-site-frontend-psi.vercel.app/",
             github: "https://github.com/ravimanivel/ecommerce-site-frontend",
             image: "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
-        } 
+        },
+        {
+            title: "Ecommerce Admin Dashboard",
+            description: "I took it a step further by building a powerful Admin Dashboard to manage and monitor the platform efficiently to the E-Commerce website.",
+            tags: ["MongoDB", "Express.js","Angular", "Node", "Git", "Restful API"],
+            link: "https://ecommerce-admin-frontend-3z7r.vercel.app/",
+            github: "https://github.com/ravimanivel/ecommerce_admin_frontend",
+            image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
+        }
     ];
 
-    const [visibleProjects, setVisibleProjects] = useState(4);
+    const [visibleProjects, setVisibleProjects] = useState(5);
 
   
 
