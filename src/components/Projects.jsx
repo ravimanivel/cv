@@ -55,10 +55,18 @@ export default function Projects() {
             link: "https://ecommerce-admin-frontend-3z7r.vercel.app/",
             github: "https://github.com/ravimanivel/ecommerce_admin_frontend",
             image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            title: "Link Hub – Your Personal Bio Link Manager",
+            description: "Instagram and other platforms often limit users to just 5 bio links – frustrating, right? That’s the problem I set out to solve.",
+            tags: ["Laravel", "PHP","Bootstrap", "CRUD", "Git", "Restful API"],
+            link: "https://linkhub-production.up.railway.app/",
+            github: "https://github.com/ravimanivel/link_hub",
+            image: "https://d3gribjq2zt3oj.cloudfront.net/blog-hub/wp-content/uploads/2017/08/Q119_Marketing_social_2_0124.png"
         }
     ];
 
-    const [visibleProjects, setVisibleProjects] = useState(5);
+    const [visibleProjects, setVisibleProjects] = useState(6);
 
   
 
