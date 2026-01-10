@@ -1,5 +1,5 @@
 import resume from '../assets/M_RAVI_Web_Developer .pdf'
-import me from '../assets/ravi.png'
+import me from '../assets/home_page.png'
 export default function Hero() {
     return (
         <section

@@ -63,10 +63,18 @@ export default function Projects() {
             link: "https://linkhub-production.up.railway.app/",
             github: "https://github.com/ravimanivel/link_hub",
             image: "https://d3gribjq2zt3oj.cloudfront.net/blog-hub/wp-content/uploads/2017/08/Q119_Marketing_social_2_0124.png"
+        },
+        {
+            title: "Kaipulla Voting Portal",
+            description: "Kaipulla Voting Portal 🎉 A fun space for Gen Z and youth to create polls, vote, and chat in real time! 💬",
+            tags: ["Mongodb", "Express", "React Js", "Node Js", "Socket.io"],
+            link: "https://kaipulla-vote-frontend.vercel.app/",
+            github: "https://github.com/ravimanivel/kaipulla_vote_frontend",
+            image: "https://raw.githubusercontent.com/ravimanivel/websites/refs/heads/main/kaipulla.png"
         }
     ];
 
-    const [visibleProjects, setVisibleProjects] = useState(6);
+    const [visibleProjects, setVisibleProjects] = useState(7);
 
   
 
