@@ -23,7 +23,7 @@ export default function Projects() {
             link: "https://ravimanivel.github.io/billing_system/",
             github: "https://github.com/ravimanivel/billing_system/",
             image: "https://images.unsplash.com/photo-1735825764478-674bb8df9d4a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }, 
+        },
         {
             title: "Find my Ip",
             description: "Finding your ip address",
@@ -35,7 +35,7 @@ export default function Projects() {
         {
             title: "Simple Resume Builder App",
             description: "This is perfect for job seekers who want a quick way to create an ATS-friendly resume. I'd love to hear your thoughts! Feel free to check it out and share feedback.",
-            tags: ["MongoDB", "Express.js","Angular", "Node", "Git"],
+            tags: ["MongoDB", "Express.js", "Angular", "Node", "Git"],
             link: "https://resume-creator-ravi-ms-projects.vercel.app/",
             github: "https://github.com/ravimanivel/resume_creator",
             image: "https://plus.unsplash.com/premium_photo-1661288470388-c5006797bdff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdW1lfGVufDB8fDB8fHww"
@@ -43,7 +43,7 @@ export default function Projects() {
         {
             title: "Ecommerce Website",
             description: "E-commerce website for buying outfits",
-            tags: ["MongoDB", "Express.js","Angular", "Node", "Git", "Restful API"],
+            tags: ["MongoDB", "Express.js", "Angular", "Node", "Git", "Restful API"],
             link: "https://ecommerce-site-frontend-psi.vercel.app/",
             github: "https://github.com/ravimanivel/ecommerce-site-frontend",
             image: "https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -51,7 +51,7 @@ export default function Projects() {
         {
             title: "Ecommerce Admin Dashboard",
             description: "I took it a step further by building a powerful Admin Dashboard to manage and monitor the platform efficiently to the E-Commerce website.",
-            tags: ["MongoDB", "Express.js","Angular", "Node", "Git", "Restful API"],
+            tags: ["MongoDB", "Express.js", "Angular", "Node", "Git", "Restful API"],
             link: "https://ecommerce-admin-frontend-3z7r.vercel.app/",
             github: "https://github.com/ravimanivel/ecommerce_admin_frontend",
             image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -59,7 +59,7 @@ export default function Projects() {
         {
             title: "Link Hub – Your Personal Bio Link Manager",
             description: "Instagram and other platforms often limit users to just 5 bio links – frustrating, right? That’s the problem I set out to solve.",
-            tags: ["Laravel", "PHP","Bootstrap", "CRUD", "Git", "Restful API"],
+            tags: ["Laravel", "PHP", "Bootstrap", "CRUD", "Git", "Restful API"],
             link: "https://linkhub-production.up.railway.app/",
             github: "https://github.com/ravimanivel/link_hub",
             image: "https://d3gribjq2zt3oj.cloudfront.net/blog-hub/wp-content/uploads/2017/08/Q119_Marketing_social_2_0124.png"
@@ -72,11 +72,20 @@ export default function Projects() {
             github: "https://github.com/ravimanivel/kaipulla_vote_frontend",
             image: "https://raw.githubusercontent.com/ravimanivel/websites/refs/heads/main/kaipulla.png"
         }
+        ,
+        {
+            title: "Confession Wall ",
+            description: "Confession Wall - an anonymous confession wall where people can unburden their hearts without judgment. ",
+            tags: ["Next JS", "MongoDB"],
+            link: "https://paperheart-sandy.vercel.app/",
+            github: "https://github.com/ravimanivel/paperheart.git",
+            image: "https://raw.githubusercontent.com/ravimanivel/websites/refs/heads/main/confession_wall.png"
+        }
     ];
 
-    const [visibleProjects, setVisibleProjects] = useState(7);
+    const [visibleProjects,] = useState(8);
 
-  
+
 
     return (
         <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
@@ -94,15 +103,15 @@ export default function Projects() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {allProjects.slice(0, visibleProjects).map((project, index) => (
-                        <div 
-                            key={index} 
+                        <div
+                            key={index}
                             className="group rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 bg-white dark:bg-gray-800"
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
                         >
                             <div className="h-48 overflow-hidden">
-                                <img 
-                                    src={project.image} 
+                                <img
+                                    src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
@@ -114,21 +123,21 @@ export default function Projects() {
                                 <p className="text-gray-600 dark:text-gray-300 mb-5">
                                     {project.description}
                                 </p>
-                                
+
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.tags.map((tag, i) => (
-                                        <span 
-                                            key={i} 
+                                        <span
+                                            key={i}
                                             className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium"
                                         >
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
-                                
+
                                 <div className="flex flex-col sm:flex-row gap-2">
-                                    <a 
-                                        href={project.link} 
+                                    <a
+                                        href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg text-sm font-medium transition-all duration-300 shadow hover:shadow-md"
@@ -138,8 +147,8 @@ export default function Projects() {
                                         </svg>
                                         Live Demo
                                     </a>
-                                    <a 
-                                        href={project.github} 
+                                    <a
+                                        href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center justify-center gap-2 px-4 py-2 border border-blue-500 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-gray-700 rounded-lg text-sm font-medium transition-all duration-300 shadow-sm hover:shadow-md"
@@ -155,7 +164,7 @@ export default function Projects() {
                     ))}
                 </div>
 
-{/*                 {allProjects.length > 3 && (
+                {/*                 {allProjects.length > 3 && (
                     <div className="text-center mt-12" data-aos="fade-up">
                         <button
                             onClick={toggleProjects}

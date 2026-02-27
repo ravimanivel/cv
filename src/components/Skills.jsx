@@ -12,6 +12,7 @@ export default function Skills() {
         { name: 'Laravel', icon: "https://cdn.worldvectorlogo.com/logos/laravel-2.svg" },
         { name: 'PHP', icon: "https://cdn.worldvectorlogo.com/logos/php-4.svg" },
         { name: 'React', icon: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
+        { name: 'Next JS', icon: "https://cdn.worldvectorlogo.com/logos/next-js.svg" },
         { name: 'Angular', icon: "https://cdn.worldvectorlogo.com/logos/angular-icon.svg" },
         { name: 'Node.js', icon: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
         { name: 'Express.js', icon: "https://cdn.worldvectorlogo.com/logos/express-109.svg" },
