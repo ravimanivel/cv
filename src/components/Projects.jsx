@@ -79,7 +79,7 @@ export default function Projects() {
             tags: ["Next JS", "MongoDB"],
             link: "https://paperheart-sandy.vercel.app/",
             github: "https://github.com/ravimanivel/paperheart.git",
-            image: "https://github.com/ravimanivel/websites/blob/main/confession_wall.png"
+            image: "https://media.licdn.com/dms/image/v2/D5622AQFinKKB4CFh6g/feedshare-shrink_800/B56ZyU6La_G4Ag-/0/1772024805303?e=1773878400&v=beta&t=klV7C8kPOWy2lSa9HonUnrXXw_bwNGJ52oij9YgVFoM"
         }
     ];
 
