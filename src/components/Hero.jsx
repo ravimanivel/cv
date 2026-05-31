@@ -23,7 +23,7 @@ export default function Hero() {
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
-                            Web Developer / Laravel Developer
+                            Full Stack Developer
                         </h2>
                         <p
                             className="text-lg mb-8 text-gray-600 dark:text-gray-300"
