@@ -18,6 +18,7 @@ import CommandTerminal from './components/CommandTerminal';
 import VoiceHoverReader from './components/VoiceHoverReader';
 import SpeakerButton from './components/SpeakerButton';
 import { playSciFiSound } from './utils/audio';
+import { pingBackend } from './utils/pingBackend';
 
 function App() {
   const [theme, setTheme] = useState('cyber'); // 'cyber' | 'matrix' | 'neon' | 'synthwave'
@@ -26,6 +27,9 @@ function App() {
   const [isVoice, setIsVoice] = useState(false); // Voice Text-to-Speech hover reader disabled (OFF) by default
 
   useEffect(() => {
+    // Auto ping backend on site entry to wake up Render instance & keep it active
+    const stopPing = pingBackend();
+
     // Initialize AOS with smooth sci-fi animations
     import('aos').then((AOS) => {
       AOS.init({
@@ -45,7 +49,10 @@ function App() {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      stopPing();
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
   // Dynamic ambient background gradient based on selected theme
